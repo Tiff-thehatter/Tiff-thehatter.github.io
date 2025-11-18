@@ -259,6 +259,9 @@ body.chocolat-open > .chocolat-image-wrapper {
     transition: margin .2s ease;
 }
 
+.hero-spacer {
+    height: 120px; 
+}
 
 /* animated progress bar  */
 

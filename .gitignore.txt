@@ -1,0 +1,9 @@
+# Windows junk files
+desktop.ini
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# OS files
+.DS_Store

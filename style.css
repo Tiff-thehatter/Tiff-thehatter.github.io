@@ -1,10 +1,9 @@
 /*
-Theme Name: Daniel
+Theme Name: Tiffany's Portfolio
 Theme URL: 
-Author: TemplatesJungle
-Author URL: https://templatesjungle.com/
-Description: Daniel is a Free Bootstrap Website Template for Portfolio Template by TemplatesJungle.
-Version: 1.0
+Author: Tiffany The Hatter
+Description: Tiffanys Portfolio is a personal website template designed to showcase the work and achievements of Tiffany The Hatter. It features a clean and modern design with sections for projects, skills, experience, and contact information. The template is fully responsive and easy to customize, making it perfect for anyone looking to create a professional online presence.
+Version: 3.0
 */
 
 /*--------------------------------------------------------------
@@ -20,7 +19,7 @@ This is main CSS file that contains custom style rules used in this template
 --------------------------------------------------------------*/
 :root {
   --accent-color: #3ab9e0;
-  --secondary-color: ;
+  --secondary-color: #F4F4F4;
   --dark-color: #2D2D2D;
   --white-color: #FFFFFF;
   --grey-color: #777777;
@@ -34,10 +33,13 @@ This is main CSS file that contains custom style rules used in this template
   --bs-gray-100: #EAE5DD;
   --bs-gray-300: #DCDCDC;
   --bs-body-color-rgb: 53, 53, 53;
-  --bs-primary-rgb: 230, 57, 70;
+  --bs-primary-rgb: 30, 188, 212;
   --bs-secondary-rgb: 249, 246, 243;
 }
-
+  /*  color-scheme for Hello Im..*/
+.intro-text {
+  color: #F4F4F4;
+}
 /* Fonts */
 :root {
   --heading-font: 'Raleway', sans-serif;
@@ -638,15 +640,30 @@ button.filter-button:hover {
 .project-content .project-img {
   transition: all 0.5s ease-in-out;
 }
+/* ===== PROJECT CARD CONTAINER ===== */
+.project-content {
+  border-radius: 18px;          /* change rectangle shape */
+  overflow: hidden;             /* clips image to rounded shape */
+  background: #0a0a0a;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  transition: all 0.35s ease;
+}
+
+/* hover lift effect */
+.project-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.6);
+}
 
 .project-content:hover .project-img {
   opacity: 0.3;
+  transform: scale(1.05);
 }
 
 .project-description {
   opacity: 0;
   transition: all 0.5s ease-in-out;
-  bottom: 50;
+  bottom: 0;
 }
 
 .project-content:hover .project-description {

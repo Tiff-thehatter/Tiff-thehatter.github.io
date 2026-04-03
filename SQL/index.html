@@ -1,190 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Receipt Database System</title>
+<meta charset="UTF-8">
+<title>Receipt Database System (SQL Server)</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px;
+}
+
+.project-section{
+    margin-bottom:50px;
+}
+
+.button{
+    display:inline-block;
+    padding:12px 20px;
+    margin:10px 10px 10px 0;
+    background:#2ecc71;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+ul{
+    list-style:none;
+    padding-left:0;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+a.sql-link{
+    color:rgb(18, 53, 20);
+    text-decoration:none;
+}
+a.sql-link:hover {
+    color:rgb(235, 98, 157);
+    text-decoration: underline;
+}
+a.sql-link:visited {
+  color: rgb(126, 39, 141);
+}
+
+</style>
 </head>
 
-<body style="font-family: 'Lato', sans-seri; padding:40px; background:#cad8fa; color:#252424">
+<body>
 
-<h1>Receipt Database System (SSMS)</h1>
+<div class="container">
+
+<h1>Receipt Database System (SQL Server)</h1>
 
 <p>
-This SQL Server database implements a full receipt tracking system
-including normalization, automation triggers, stored procedures,
-and security constraints.
+This project implements a fully normalized SQL Server receipt tracking system
+designed for secure transaction management. The database includes automation
+triggers, stored procedures, user-defined functions, and role-based
+security controls.
 </p>
 
-
-
+<!-- ======================= -->
+<div class="project-section">
 <h2>Main Database Script</h2>
 
-<a href="EERDBS-3-.sql">Download Full Database Script</a>
+<a class="button" href="EERDBS-3-.sql">
+Download Full Database Script
+</a>
 
+</div>
+
+<!-- ======================= -->
+<div class="project-section">
 <h2>Security Controls</h2>
 
 <ul>
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec2.sql">
-SEC02 – Role Creation
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec7.sql">
-SEC07 – Member Creation
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec8.sql">
-SEC08 – User Creation
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec9.sql">
-SEC09 – User Permission
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec10.sql">
-SEC10 – User Permission
-</a>
-</li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec2.sql">SEC02 – Role Creation</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec7.sql">SEC07 – Member Creation</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec8.sql">SEC08 – User Creation</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec9.sql">SEC09 – User Permission</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/security/sec10.sql">SEC10 – User Permission</a></li>
 </ul>
 
+</div>
 
+<!-- ======================= -->
+<div class="project-section">
 <h2>Stored Procedures</h2>
 
 <ul>
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp6.sql">
-SP06 – Insert Receipts
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp7.sql">
-SP07 – Delete Validation
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp8.sql">
-SP08 – Update Totals
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp9.sql">
-SP09 – Update Totals
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp10.sql">
-SP10 – Reporting Query
-</a>
-</li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp6.sql">SP06 – Insert Receipts</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp7.sql">SP07 – Delete Validation</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp8.sql">SP08 – Update Totals</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp9.sql">SP09 – Update Totals</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/procedures/sp10.sql">SP10 – Reporting Query</a></li>
 </ul>
 
+</div>
 
+<!-- ======================= -->
+<div class="project-section">
 <h2>User Defined Functions</h2>
 
 <ul>
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf2.sql">
-UDF02 – Averages
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf5.sql">
-UDF05 – Lookup Function
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf6.sql">
-UDF06 – Date Validator
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf7.sql">
-UDF07 – Price Comparison
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf8.sql">
-UDF08 – Date Validator
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf9.sql">
-UDF09 – Lookup Function
-</a>
-</li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf2.sql">UDF02 – Averages</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf5.sql">UDF05 – Lookup Function</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf6.sql">UDF06 – Date Validator</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf7.sql">UDF07 – Price Comparison</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf8.sql">UDF08 – Date Validator</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/functions/udf9.sql">UDF09 – Lookup Function</a></li>
 </ul>
 
+</div>
 
+<!-- ======================= -->
+<div class="project-section">
 <h2>Automation Triggers</h2>
 
 <ul>
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig1.sql">
-TRIG01 – Logging Trigger
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig2.sql">
-TRIG02 – Insert Validation
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig4.sql">
-TRIG04 – Audit Trigger
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig8.sql">
-TRIG08 – Limitation Trigger
-</a>
-</li>
-
-<li>
-<a target="_blank"
-href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig9.sql">
-TRIG09 – Logging Trigger
-</a>
-</li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig1.sql">TRIG01 – Logging Trigger</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig2.sql">TRIG02 – Insert Validation</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig4.sql">TRIG04 – Audit Trigger</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig8.sql">TRIG08 – Limitation Trigger</a></li>
+<li><a class="sql-link" target="_blank" href="https://github.com/Tiff-thehatter/Tiff-thehatter.github.io/blob/main/SQL/triggers/trig9.sql">TRIG09 – Logging Trigger</a></li>
 </ul>
+
+</div>
+
+</div>
 
 </body>
 </html>

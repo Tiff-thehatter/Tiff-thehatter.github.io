@@ -44,55 +44,18 @@
 
     </svg>
 
-    <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
 
-    <div class="search-popup">
-        <div class="search-popup-container">
-
-            <form role="search" method="get" class="form-group" action="index.html">
-                <input type="search" id="search-form" class="form-control border-0 border-bottom"
-                    placeholder="Type and press enter" value="" name="s">
-                <button type="submit" class="search-submit border-0 position-absolute bg-white"
-                    style="top: 15px;right: 15px;"><svg class="search" width="24" height="24">
-                        <use xlink:href="#search"></use>
-                    </svg></button>
-            </form>
-
-            <h5 class="cat-list-title">Browse Categories</h5>
-
-            <ul class="cat-list">
-                <li class="cat-list-item">
-                    <a href="#" title="Self Love">Self Love</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Relationships">Relationships</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Skin Care">Skin Care</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Health">Health</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Spa">Spa</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Friendship">Friendship</a>
-                </li>
-                <li class="cat-list-item">
-                    <a href="#" title="Healing">Healing</a>
-                </li>
-            </ul>
-
-        </div>
-    </div>
+    
 
 
-    <nav id="header-nav" class="navbar navbar-expand-lg container-fluid bg-white bg-opacity-50 py-4 fixed-top">
+    <nav id="header-nav" class="navbar container-fluid bg-white bg-opacity-50 py-4 fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/usflogosized.png" alt="logo"></a>
+            <a class="navbar-brand" href="#">
+                <img src="images/usflogosized.png" alt="logo">
+            </a>
 
-            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+            <button class="navbar-toggler shadow-none" 
+                type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -101,12 +64,42 @@
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                        aria-label="Close">
+                    </button>
                 </div>
-                
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hire"
+                            data-bs-dismiss="offcanvas">What I Do</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio"
+                            data-bs-dismiss="offcanvas">Portfolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#libraries"
+                            data-bs-dismiss="offcanvas">
+                            Languages, Databases & Libraries
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"
+                            data-bs-dismiss="offcanvas">Contact Me</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
         </div>
-
+        
     </nav>
 
     <section id="hero" class="padding-large jarallax">
@@ -210,8 +203,8 @@
                     <button class="filter-button px-3 mb-3" data-filter=".ctf">
                         CTF
                     </button>
-                    <button class="filter-button px-3 mb-3" data-filter=".rust">
-                        Rust Project
+                    <button class="filter-button px-3 mb-3" data-filter=".python">
+                        Python Project
                     </button>
                     <button class="filter-button px-3 mb-3" data-filter=".java">
                         Java Project
@@ -226,15 +219,6 @@
             </div>
         </div>
         <div class="isotope-container row">
-            <div class="item windows col-md-4 p-3">
-                <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="images/pcapmemory.png" alt="img">
-                    <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">Pcap and Memory Forensics</h4>
-                        <a href="pcapmemory.pdf" class="text-white text-decoration-underline">Learn More</a>
-                    </div>
-                </div>
-            </div>
             <div class="item dbs col-md-4 p-3">
                 <div class="project-content position-relative bg-black">
                     <img class="project-img img-fluid" src="images/sql-illustration.png" alt="SQL Project">
@@ -244,12 +228,12 @@
                     </div>
                 </div>
             </div>
-            <div class="item ctf col-md-4 p-3">
+            <div class="item windows col-md-4 p-3">
                 <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="images/codeinject.png" alt="img">
+                    <img class="project-img img-fluid" src="images/pcapmemory.png" alt="img">
                     <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">Command Injection</h4>
-                        <a href="COmmandINject.pdf" class="text-white text-decoration-underline">Learn More</a>
+                        <h4 class="text-white">Pcap and Memory Forensics</h4>
+                        <a href="pcapmemory.pdf" class="text-white text-decoration-underline">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -262,12 +246,30 @@
                     </div>
                 </div>
             </div>
-            <div class="item rust col-md-4 p-3">
+            <div class="item windows col-md-4 p-3">
                 <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="images/scikit.png" alt="img">
+                    <img class="project-img img-fluid" src="images/windowslogo.png" alt="img">
                     <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">Python Script With Scikit-Learn</h4>
-                        <a href="multimodal_SyS.py" class="text-white text-decoration-underline">Learn More</a>
+                        <h4 class="text-white">Windows Incident Response Report</h4>
+                        <a href="ir-report.pdf" class="text-white text-decoration-underline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item python col-md-4 p-3">
+                <div class="project-content position-relative bg-black">
+                    <img class="project-img img-fluid" src="images/biometric.png" alt="img">
+                    <div class="project-description p-5 position-absolute bottom-0 start-0">
+                        <h4 class="text-white">Multimodal Biometric Authentication</h4>
+                        <a href="python/biometric.html" class="text-white text-decoration-underline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item ctf col-md-4 p-3">
+                <div class="project-content position-relative bg-black">
+                    <img class="project-img img-fluid" src="images/codeinject.png" alt="img">
+                    <div class="project-description p-5 position-absolute bottom-0 start-0">
+                        <h4 class="text-white">Command Injection</h4>
+                        <a href="commandinjection.pdf" class="text-white text-decoration-underline">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -289,6 +291,15 @@
                 </div>
             </div>
         </div>
+        <div class="item ctf col-md-4 p-3">
+                <div class="project-content position-relative bg-black">
+                    <img class="project-img img-fluid" src="images/bad_pdf.png" alt="img">
+                    <div class="project-description p-5 position-absolute bottom-0 start-0">
+                        <h4 class="text-white">Malicious Document Analysis</h4>
+                        <a href="doc_analysis.pdf" class="text-white text-decoration-underline">Learn More</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
             
@@ -437,7 +448,7 @@
 
             <ul class="d-flex gap-5 list-unstyled justify-content-center my-3">
 
-                <!-- LINKEDIN -->
+            <!-- LINKEDIN -->
                 <li>
                     <a class="nav-link p-0"
                     href="https://www.linkedin.com/in/tiffany-peavy-86119a150"
